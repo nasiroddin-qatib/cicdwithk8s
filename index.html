@@ -10,7 +10,7 @@
       padding:15px 25px; background:#1e293b;
     }
 
-    .badge { background:#facc15; padding:6px 12px; border-radius:20px; }
+    .badge { background:#22c55e; padding:6px 12px; border-radius:20px; }
 
     .container { padding:40px; }
 
@@ -28,23 +28,8 @@
 
     .value { font-size:20px; font-weight:bold; }
 
-    .progress-bar {
-      background:#334155;
-      border-radius:10px;
-      overflow:hidden;
-      margin-top:10px;
-    }
-
-    .progress {
-      height:10px;
-      width:60%;
-      background:#facc15;
-      animation: progressAnim 2s infinite alternate;
-    }
-
-    @keyframes progressAnim {
-      from { width:40%; }
-      to { width:80%; }
+    .success {
+      color:#22c55e;
     }
 
   </style>
@@ -53,7 +38,7 @@
 
 <div class="header">
   <div>Kubernetes Deployment Dashboard</div>
-  <div class="badge">Version 2 (Updating)</div>
+  <div class="badge">Version 3 (Stable)</div>
 </div>
 
 <div class="container">
@@ -66,7 +51,7 @@
 
     <div class="card">
       <h3>System Status</h3>
-      <div class="value">Updating...</div>
+      <div class="value success">Healthy</div>
     </div>
 
     <div class="card">
@@ -76,15 +61,12 @@
 
     <div class="card">
       <h3>Current Version</h3>
-      <div class="value">v1</div>
+      <div class="value success">v3</div>
     </div>
 
     <div class="card">
-      <h3>Next Version</h3>
-      <div class="value">v2 (Deploying)</div>
-      <div class="progress-bar">
-        <div class="progress"></div>
-      </div>
+      <h3>Deployment Status</h3>
+      <div class="value success">Completed</div>
     </div>
 
   </div>
